@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular(10)),
                   child: TextField(
                     controller: _todoController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: 'Add a new Item', border: InputBorder.none),
                   ),
                 )),
@@ -152,7 +152,7 @@ class _HomeState extends State<Home> {
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: TextField(
         onChanged: (value)=>whileRunning(value),
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
             contentPadding: EdgeInsets.all(0),
             prefixIcon: Icon(
               Icons.search,
